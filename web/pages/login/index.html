@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome icons -->
+    <script src="https://kit.fontawesome.com/d9620d7892.js" crossorigin="anonymous"></script>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=poppins:500" rel="stylesheet" />
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div>
+            <p>Sign up to News-Storm now!</p>
+            <p>
+                Keep up with storm of latest news. <br>
+                Navigate easily and stay ahead.
+            </p>
+        </div>
+        <div>
+            <form>
+                <section>
+                    <h1>Basic info</h1>
+                    <!-- Username -->
+                    <label for="username">Your username:</label><br>
+                    <input type="text" name="username" id="username" required placeholder="Your username"><br>
+                    <!-- Password -->
+                    <label for="password">Your password:</label><br>
+                    <input type="password" name="password" id="password" required placeholder="Your password"><br>
+                    <a lang="pw" href="https://www.keepersecurity.com/blog/2022/09/14/why-is-password-security-important/" target="_blank">Why use strong password?</a><br>
+                    <hr>
+                    <!-- E-mail -->
+                    <label for="email">Your email:</label><br>
+                    <input type="email" name="email" id="email" required placeholder="name@provider.com"><br>
+                    <!-- Fisrt name -->
+                    <label for="fname">Your first name:</label><br>
+                    <input type="text" name="fname" id="fname" required placeholder="John"><br>
+                    <!-- Last name (optinal) -->
+                    <label for="lname">Your last name (optinal):</label><br>
+                    <input type="text" name="lname" id="lname" placeholder="Smith"><br>
+                    <hr>
+                    <!-- Birth date -->
+                    <label for="age">Your birth date:</label><br>
+                    <input type="date" name="age" id="age" required><br>
+                    <!-- Language -->
+                    <label for="language">Choose a language:</label><br>
+                    <select id="language" name="language" required>
+                        <option value="english">English</option>
+                        <option value="spanish">Spanish</option>
+                        <option value="french">French</option>
+                        <option value="german">German</option>
+                        <option value="italian">Italian</option>
+                        <option value="portuguese">Portuguese</option>
+                        <option value="russian">Russian</option>
+                        <option value="chinese">Chinese</option>
+                        <option value="japanese">Japanese</option>
+                        <option value="korean">Korean</option>
+                        <option value="arabic">Arabic</option>
+                        <option value="hindi">Hindi</option>
+                        <option value="dutch">Dutch</option>
+                    </select>
+                </section>
+                <section>
+                    <!-- News category -->
+                    <h2>Which news you like most?</h2>
+                    <input type="checkbox" id="category1" value="x1">
+                    <label for="category1">Politics</label><br>                                                
+                    <input type="checkbox" id="category2" value="x2">
+                    <label for="category2">Sports</label><br>                                              
+                    <input type="checkbox" id="category3" value="x3">
+                    <label for="category3">Entertainment</label><br>                                               
+                    <input type="checkbox" id="category4" value="x4">
+                    <label for="category4">Technology</label><br>                                               
+                    <input type="checkbox" id="category5" value="x5">
+                    <label for="category5">Business</label><br>  
+                    <hr>
+                    <!-- Submit -->
+                    <section>
+                        <input type="submit" value="Sign Up">
+                        <p>
+                            By creating account you agree<br>
+                            News-Storm's <a>Terms of Use</a><br>
+                            and <a>Privacy Policy</a>.
+                        </p>
+                    </section>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,112 @@
+/* GLOBAL STYLE */
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* VARIABLES */
+/* STYLE */
+body {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  background: linear-gradient(rgb(4, 74, 134), rgb(8, 40, 103));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main {
+  padding: 14px;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(69, 151, 90, 0.5));
+  width: fit-content;
+  box-shadow: 0px 0px 40px rgba(90, 120, 133, 0.7);
+  border-radius: 7px;
+  display: flex;
+  /* Left side */
+  /* Right side */
+}
+main div:nth-child(1) {
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  width: 100%;
+  padding: 14px;
+  background-image: url("./assets/storm.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+main div:nth-child(1) p:nth-child(1) {
+  background: rgba(128, 128, 128, 0.5);
+  padding: 14px;
+  font-size: 2rem;
+  border-radius: 7px;
+  margin-bottom: 10px;
+}
+main div:nth-child(1) p:nth-child(2) {
+  background: rgba(128, 128, 128, 0.5);
+  padding: 14px;
+  font-size: 1.5rem;
+  border-radius: 7px;
+  width: fit-content;
+}
+main div:nth-child(2) {
+  width: 100%;
+  padding: 14px;
+  margin-left: 7;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  background: whitesmoke;
+}
+main div:nth-child(2) form {
+  display: flex;
+}
+main div:nth-child(2) form input, main div:nth-child(2) form select {
+  margin-bottom: 7px;
+  outline: none;
+  border-radius: 3px;
+  border: 0.5px grey solid;
+}
+main div:nth-child(2) form input:hover, main div:nth-child(2) form select:hover {
+  border-color: blue;
+}
+main div:nth-child(2) form input:focus, main div:nth-child(2) form select:focus {
+  border-color: blue;
+}
+main div:nth-child(2) form a {
+  color: rgb(8, 40, 103);
+  text-decoration: none;
+}
+main div:nth-child(2) form a:lang(pw) {
+  cursor: help;
+}
+main div:nth-child(2) form hr {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+main div:nth-child(2) form section:nth-child(1) {
+  border-right: 1px grey solid;
+  padding-right: 7px;
+}
+main div:nth-child(2) form section:nth-child(2) {
+  padding-left: 7px;
+}
+main div:nth-child(2) form section:nth-child(2) section {
+  margin: auto;
+}
+main div:nth-child(2) form section:nth-child(2) section input {
+  margin: auto;
+  margin-bottom: 14px;
+  padding: 10px 55px 10px 55px;
+  color: white;
+  background: rgb(8, 40, 103);
+  font-size: 1.5rem;
+  display: block;
+}
+main div:nth-child(2) form section:nth-child(2) section p {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

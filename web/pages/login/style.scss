@@ -1,0 +1,143 @@
+/* GLOBAL STYLE */
+*{
+    // Box model
+    padding: 0;
+    margin: 0;
+    // Font
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+/* VARIABLES */
+$blue: rgb(8, 40, 103);
+$dist: 14px;
+
+/* STYLE */
+body{
+    // Set login screen to center
+    display: flex;
+    align-items: center; // Horizontal
+    height: 100vh; // Needed for vertical align
+    justify-content: center; // Vertical
+    // Background
+    background: linear-gradient(rgb(4, 74, 134), $blue);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+// Login screen
+main{
+    // Box model
+    padding: $dist;
+    // Background
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(69, 151, 90, 0.5));
+    // Size
+    width: fit-content;
+    // Shadow
+    box-shadow: 0px 0px 40px rgba(90, 120, 133, 0.7);
+    // Rounded corners
+    border-radius: 7px;
+    display: flex;
+    /* Left side */
+    div:nth-child(1){
+        // Rounded corners
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+        // Size
+        width: 100%;
+        // Box model
+        padding: $dist;
+        // Background
+        background-image: url("./assets/storm.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        // Text color
+        color: white;
+        @mixin text-style($size){
+            // Background
+            background: rgba(128, 128, 128, .5);
+            // Box model
+            padding: $dist;
+            // Font
+            font-size: $size;
+            // Rounded corners
+            border-radius: 7px;     
+        }
+        p:nth-child(1){
+            @include text-style(2rem);
+            margin-bottom: 10px;
+        }
+        p:nth-child(2){
+            @include text-style(1.5rem);
+            width: fit-content;
+        }
+    }
+    /* Right side */
+    div:nth-child(2){
+        // Size
+        width: 100%;
+        // Box model
+        padding: $dist;
+        margin-left: 7;
+        // Rounded corners
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+        // Background
+        background: whitesmoke;
+        // Form
+        form{
+            display: flex;
+            input, select{
+                // Box model
+                margin-bottom: 7px;
+                outline: none;
+                // Border
+                border-radius: 3px;
+                border: 0.5px grey solid;
+                // Blue border
+                &:hover{ border-color: blue; }
+                &:focus{ border-color: blue; }
+            }
+            // Links
+            a{
+                color: $blue;
+                text-decoration: none;
+                &:lang(pw) { cursor: help; }
+            }
+            // Horizontal lines
+            hr{
+                // Distance
+                margin-top: 12px;
+                margin-bottom: 12px;
+            }
+            // Form sections
+            section:nth-child(1){
+                border-right: 1px grey solid;
+                padding-right: 7px;
+            }
+            section:nth-child(2){
+                // Box model
+                padding-left: 7px;
+                section{
+                    margin: auto;
+                    input{
+                        // Box model
+                        margin: auto;
+                        margin-bottom: $dist;
+                        $x: 55px;
+                        $y: 10px;
+                        padding: $y $x $y $x;
+                        // Style
+                        color: white;
+                        background: $blue;
+                        font-size: 1.5rem;
+                        display: block; // Set it to center
+                    }
+                    p{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
